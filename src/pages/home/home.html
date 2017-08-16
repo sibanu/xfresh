@@ -1,17 +1,92 @@
 <ion-header>
+  <div class="page-wrapper">
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-md-3>
+          <ion-icon name="ios-person-outline" style="font-size: 30px; color:#fff;" (click)="toProfile()"></ion-icon>
+        </ion-col>
+        <ion-col col-md-6 style="text-align: center;">
+          <ion-title>myXL</ion-title>
+        </ion-col>
+        <ion-col col-md-3 style="text-align: right;">
+          <ion-icon name="ios-filing" style="font-size: 30px; color:#fff;" (click)="toInbox()"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-navbar>
+  </div>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<ion-content class="backgroundgbr">
+  <div class="page-wrapper">
+      <div class="nama">
+      Banu Thalhah
+    </div>
+    <div class="nohp">
+      <button ion-button color="light" round>081908737445</button>
+    </div>
+
+    <div class="quota" round padding>
+        <div class="title">
+          Sisa Kuota
+        </div>
+        <div class="quotabar">
+          <div class="progress-outer">
+            <div class="progress-inner" [style.width]="'70%'">
+                70%
+            </div>
+          </div>
+        </div>
+        <div class="quotatext">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-icon name="wifi"></ion-icon>
+                <div>10.3 GB</div>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="call"></ion-icon>
+                <div>141 menit</div>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="chatbubbles"></ion-icon>
+                <div>SMS</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+    </div>
+
+    <div class="middle">
+      <div class="pulsa">
+        <p>Sisa Pulsa</p>
+        <p>Rp. 450.000</p>
+        <p>sampai 15 Aug, 2017 - 120 Hari</p>
+        <p>
+          <button ion-button outline>Isi Pulsa</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <ion-slides pager loop autoplay="2000">
+
+        <ion-slide style="background-color: green">
+          <img src="https://myprepaid.xl.co.id/drupal_prepaid/sites/default/files/myxlgaruda.jpg" width="100%">
+        </ion-slide>
+
+        <ion-slide style="background-color: blue">
+          <img src="https://myprepaid.xl.co.id/drupal_prepaid/sites/default/files/xlxtracombor3.jpg" width="100%">
+        </ion-slide>
+
+        <ion-slide style="background-color: red">
+          <img src="https://myprepaid.xl.co.id/drupal_prepaid/sites/default/files/myxlslidingbannerocrepes.jpg" width="100%">
+        </ion-slide>
+
+      </ion-slides>
+    </div>
+  </div>
+  
 </ion-content>

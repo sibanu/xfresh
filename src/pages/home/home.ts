@@ -11,4 +11,12 @@ export class HomePage {
 
   }
 
+  toProfile(){
+    this.navCtrl.push("ProfilePage");
+  }
+
+  toInbox(){
+    this.navCtrl.push("InboxPage");
+  }
+
 }

@@ -14,3 +14,22 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.page-wrapper{
+    max-width: 600px;
+    margin: auto;
+}
+
+.backgroundgbr{
+    background-image: url("../assets/images/home-page-dashboard-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+.toolbar-background {
+    background: transparent;
+}
+.toolbar-title-md{
+    color: #fff !important;
+}
+ion-header ion-icon.back-button-icon.icon {
+    color: #fff;
+}

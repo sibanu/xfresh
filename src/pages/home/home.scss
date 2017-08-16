@@ -1,3 +1,61 @@
 page-home {
+    .nama{
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #fff;
+    }
+    .nohp{
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .middle{
+        background-color: #fff;
+        margin-top: -80px;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
 
+    .quota{
+        box-shadow: 1px 1px 25px #888888;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 25px;
+        padding-top: 5px;
+        background-color: #fff;
+        z-index: 200;
+        position: relative;
+        text-align: center;
+    }
+
+    .progress-outer {
+        width: 96%;
+        margin: 10px 2%;
+        padding: 3px;
+        text-align: center;
+        background-color: #f4f4f4;
+        border: 1px solid #dcdcdc;
+        color: #fff;
+        border-radius: 20px;
+    }
+ 
+    .progress-inner {
+        min-width: 15%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: map-get($colors, primary);
+    }
+
+    .pulsa{
+        margin-top: 50px;
+    }
 }
